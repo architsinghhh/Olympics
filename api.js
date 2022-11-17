@@ -18,7 +18,7 @@ app.listen(3000, () => {
 client.connect();
 
 
-app.get('/country', (req, res) => {
+app.get('/category', (req, res) => {
 
 
     client.query(`set search_path to olympics_db`,(err,result)=>{
@@ -34,7 +34,10 @@ app.get('/country', (req, res) => {
         
     });
 
-    client.query(`Select * from country`, (err, result) => {
+    client.query(`select *
+    from category
+    where sport_id=50;
+    `, (err, result) => {
 
         if (!err) {
             res.send(result.rows);
