@@ -8,6 +8,7 @@ const app = express();
 
 app.listen(3000, () => {
 
+
     console.log('Server is running on port 3000');
 })
 
@@ -16,7 +17,7 @@ app.listen(3000, () => {
 
 client.connect();
 
-app.get('/athlete', (req, res) => {
+app.get('/country', (req, res) => {
 
 
     client.query(`set search_path to olympics_db`,(err,result)=>{
@@ -32,7 +33,7 @@ app.get('/athlete', (req, res) => {
         
     });
 
-    client.query(`Select * from "athlete"`, (err, result) => {
+    client.query(`Select * from country`, (err, result) => {
 
         if (!err) {
             res.send(result.rows);
