@@ -18,7 +18,7 @@ app.listen(3000, () => {
 client.connect();
 
 
-app.get('/olympics', (req, res) => {
+app.get('/medal', (req, res) => {
 
 
     client.query(`set search_path to olympics_db`,(err,result)=>{
@@ -34,8 +34,9 @@ app.get('/olympics', (req, res) => {
         
     });
 
-    client.query(`select *
-    from olympics
+    client.query(`select count(*), type
+    from medal
+    group by type;
     `, (err, result) => {
 
         if (!err) {
