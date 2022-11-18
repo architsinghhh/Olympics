@@ -18,7 +18,7 @@ app.listen(3000, () => {
 client.connect();
 
 
-app.get('/category', (req, res) => {
+app.get('/olympics', (req, res) => {
 
 
     client.query(`set search_path to olympics_db`,(err,result)=>{
@@ -35,8 +35,7 @@ app.get('/category', (req, res) => {
     });
 
     client.query(`select *
-    from category
-    where sport_id=50;
+    from olympics
     `, (err, result) => {
 
         if (!err) {
