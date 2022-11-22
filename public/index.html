@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Olympics Database Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><<img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">INFO</a></li>
+                        <li><a href="">GALLERY</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <!--<i class="fa fa-bars" onclick="showMenu()"></i>-->
+        </nav>
+<div class="text-box">
+   <h1>All About Olympics</h1>
+   <p>The Olympic games is the largest multi-sport event in the world held every four years. It has eyes over it from across the globe. Athletes which are best<br>among their countries participate to compete against each other and show their capabilities. It receives a great deal of attention from all age groups.<br>The ultimate goals are to cultivate human beings, through sport, and contribute to world peace. Summer Games and Winter Games are held separately.</p>
+   <a href="" class="hero-btn">Visit us to know more</a>
+   </div> 
+        
+    </section>
+    
+    
+<!------- information about tables ------->
+<section class="info">
+    <h1>About this Olympics Database Management System</h1>
+    <p>The purpose of this database system is to provide facts about the Olympics held after 1900. By this database anyone will be able to know about the Olympics, details of the players, the years in which they played, the positions they held, countries in which the game is held, the chief guest of the respective year, the opening ceremony details, information about all the winners from each sport, track of all the individual players and their important personal details. </p>
+    
+    <div class="row">
+        <div class="info-col">
+            <form action="/athlete" method="post">
+                <button type="text" class="submit">Athlete</button>
+        </form> 
+            <p>It contains information about all the athletes who atleast once participated in the Olympics. It has information about athlete's name, the country which he represents, his height, his weight and age. Every athlete is uniquely identified by a athlete_id.</p>
+        </div>
+        <div class="info-col">
+            <form action="/country" method="post">
+                <button>Countries</button>
+        </form> 
+            <p>It contains information about all the countries who once participated in the Olympics. Every country is uniquely identified by a country_id. It also has information about which year the country participated athlete's name country height weight age and his ID.</p>
+        </div>
+        <div class="info-col">
+            <form action="/sport" method="post">
+                <button>Sports</button>
+        </form> 
+            <p>It contains information about all the athletes who atleast once participated in the Olympics. It has information about athlete's name country height weight age and his ID.</p>
+        </div>
+        <div class="info-col">
+            <form action="/medal" method="post">
+                <button>Medals</button>
+        </form> 
+            <p>It contains information about all the athletes who atleast once participated in the Olympics. It has information about athlete's name country height weight age and his ID.</p>
+        </div>
+        <div class="info-col">
+            <form action="/category" method="post">
+                <button>Categories</button>
+        </form> 
+            <p>It contains information about all the athletes who atleast once participated in the Olympics. It has information about athlete's name country height weight age and his ID.</p>
+        </div>
+        <div class="info-col">
+            <form action="/hosting country" method="post">
+                <button>Hosting Countries</button>
+        </form> 
+            <p>It contains information about all the athletes who atleast once participated in the Olympics. It has information about athlete's name country height weight age and his ID.</p>
+        </div>
+        <div class="info-col">
+            <form action="/paralympics" method="post">
+                <button>Paralympics</button>
+        </form> 
+            <p>It contains information about all the athletes who atleast once participated in the Olympics. It has information about athlete's name country height weight age and his ID.</p>
+        </div>
+        <div class="info-col">
+            <form action="/olympics" method="post">
+                <button>Olympics</button>
+        </form> 
+            <p>It contains information about all the athletes who atleast once participated in the Olympics. It has information about athlete's name country height weight age and his ID.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <center><h1 class="heading"> Olympic Games <span> Gallery </span> </h1> </center>
+
+    <div class="box-container">
+
+        <div class="box">
+         <img src="game1.jpeg"> 
+            <div class="content">
+                <h3>Olympicsss</h3>
+               
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="game5.jpeg"> 
+            <div class="content">
+                <h3>NO tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="game3.jpeg">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="game2.jpeg">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="game4.jpeg">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="game6.jpeg">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+            </div>
+        </div>
+       
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!----------- contact us ------------>
+<section class="cta">
+   <h1>Login in to our website</h1>
+   <a href="" class="hero-btn">CONTACT US</a>
+    
+</section>
+
+
+<!-----footer-----> 
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Hey this website is made by us. We are priya and archit mentored by pinak who is mentored by minal mam.</p>
+    <div class="icons">
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-whatsapp"></i>
+    </div>
+</section> 
+
+
+
+<!-----javascript for toogle----->    
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+    </script>    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Olympics Database Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><<img src="images/logo.png" width="50" height="50"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">INFO</a></li>
+                        <li><a href="">GALLERY</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<h1>ABOUT US</h1>
+        
+    </section>
+    
+<!----about us content---->
+   <section class="about-us">
+       <div class="row">
+           <div class="about-col">
+               <h1>PRIYA</h1>
+               <p>this side priya id 202001261 from jamnagar gf of archit id 202001272 from lucknow</p>
+               <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+           </div>
+           <div class="about-col">
+               <img src="images/archit.jpg"> 
+           </div>
+       </div>
+   </section>
+    
+    
+    
+    
+    
+<!-----footer-----> 
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Hey this website is made by us. We are priya and archit mentored by pinak who is mentored by minal mam.</p>
+    <div class="icons">
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-whatsapp"></i>
+    </div>
+</section> 
+
+
+
+<!-----javascript for toogle----->    
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+    </script>    
+</body>
+</html>
